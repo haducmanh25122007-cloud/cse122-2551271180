@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hành trình Trung Hoa</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: #f4f5f7;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    .tour-card {
+      width: min(100%, 1000px);
+      min-height: 440px;
+      padding: 26px 30px 34px;
+      color: #fff8dc;
+      background: linear-gradient(125deg, #c9a52d 0%, #b58b1e 48%, #9e7418 100%);
+      box-shadow: 0 12px 26px rgba(0,0,0,.28);
+    }
+    h1 {
+      margin: 0 0 18px;
+      text-align: center;
+      font-size: clamp(23px, 3vw, 30px);
+      line-height: 1.25;
+      color: #fff9e7;
+      text-shadow: 2px 3px 4px rgba(65,42,5,.85);
+    }
+    .great-wall {
+      float: right;
+      width: 32%;
+      height: 350px;
+      object-fit: cover;
+      margin: 0 0 18px 22px;
+      border: 3px solid #fff1c5;
+      border-radius: 3px;
+      box-shadow: 0 3px 9px rgba(0,0,0,.3);
+    }
+    p {
+      margin: 0 0 14px;
+      font-size: 17px;
+      line-height: 1.72;
+      text-align: justify;
+      text-shadow: 1px 1px 2px rgba(65,42,5,.65);
+    }
+    .clearfix::after { content: ""; display: block; clear: both; }
+    @media (max-width: 650px) {
+      body { padding: 14px; }
+      .tour-card { padding: 22px 18px; }
+      .great-wall {
+        float: none;
+        display: block;
+        width: min(100%, 320px);
+        height: auto;
+        max-height: 360px;
+        margin: 0 auto 20px;
+      }
+      p { font-size: 16px; line-height: 1.6; }
+    }
+  </style>
+</head>
+<body>
+  <main class="tour-card clearfix">
+    <h1>“Bất đáo Trường Thành phi hảo hán”...</h1>
+    <img class="great-wall" src="greatwall.jpg" alt="Vạn Lý Trường Thành">
+    <p>Công ty du lịch Hoàn Mỹ giới thiệu hành trình khám phá Trung Hoa: chinh phục Vạn Lý Trường Thành, ghé Thập Tam Lăng, tham quan Cung Điện Mùa Hè – nơi Từ Hy Thái Hậu cho “đào hồ, đắp núi, xây chùa”.</p>
+    <p>Du khách còn được dạo quảng trường Thiên An Môn, chiêm ngưỡng Cố Cung, thưởng thức vịt quay Bắc Kinh. Tiếp đó là Thượng Hải với vườn Dự Viên và khu lầu Vạn Quốc bên sông Hoàng Phố.</p>
+    <p>Hành trình khép lại ở Hàng Châu – nơi có sự tích “cầu gãy mà không gãy” gắn với chuyện Lương Sơn Bá – Chúc Anh Đài, cùng thiên đường mua sắm ngọc trai quý hiếm.</p>
+  </main>
+</body>
+</html>
